@@ -1,0 +1,111 @@
+@import url("./reset.css");
+@import "tailwindcss";
+
+/* Font Families */
+@font-face {
+    font-display: swap;
+    font-family: "Rubik";
+    font-weight: 100 900;
+    src: url(/font/Rubik-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Kode";
+    font-weight: 400 700;
+    src: url(/font/KodeMono-VariableFont_wght.ttf);
+}
+
+@theme {
+    --font-rubik: Rubik, sans-serif;
+    --font-kode: Kode, ui-monospace;
+
+    /* Colors */
+    --color-black-100: hsla(0, 41%, 12%, 1);
+    --color-black-200: hsla(0, 45%, 5%, 1);
+    --color-black-300: hsla(0, 45%, 3%, 1);
+    --color-black-400: hsla(0, 25%, 2%, 1);
+
+    --color-cream-100: hsla(34, 75%, 96%, 1);
+    --color-cream-200: hsla(35, 84%, 91%, 1);
+    --color-cream-300: hsla(35, 86%, 71%, 1);
+
+    --color-pink-100: hsla(330, 76%, 97%, 1);
+    --color-pink-200: hsla(325, 82%, 86%, 1);
+    --color-pink-300: hsla(326, 88%, 65%, 1);
+
+    --color-orange-100: hsla(27, 96%, 71%, 1);
+    --color-orange-200: hsla(24, 92%, 56%, 1);
+    --color-orange-300: hsla(10, 89%, 41%, 1);
+
+    --color-blue-100: hsla(202, 89%, 60%, 1);
+    --color-blue-200: hsla(208, 85%, 47%, 1);
+    --color-blue-300: hsla(207, 92%, 32%, 1);
+
+    --color-olive-100: hsla(67, 64%, 65%, 1);
+    --color-olive-200: hsla(66, 60%, 51%, 1);
+    --color-olive-300: hsla(57, 32%, 36%, 1);
+
+    --color-gold-100: hsla(46, 100%, 64%, 1);
+    --color-gold-200: hsla(35, 96%, 50%, 1);
+    --color-gold-300: hsla(24, 95%, 36%, 1);
+
+    /* Font Sizes */
+    --text-step--2: clamp(0.72rem, 0.6609rem + 0.2954vw, 0.96rem);
+    --text-step--1: clamp(0.9rem, 0.8262rem + 0.3692vw, 1.2rem);
+    --text-step-0: clamp(1.125rem, 1.0327rem + 0.4615vw, 1.5rem);
+    --text-step-1: clamp(1.4063rem, 1.2909rem + 0.5769vw, 1.875rem);
+    --text-step-2: clamp(1.7578rem, 1.6136rem + 0.7212vw, 2.3438rem);
+    --text-step-3: clamp(2.1973rem, 2.017rem + 0.9014vw, 2.9297rem);
+    --text-step-4: clamp(2.7466rem, 2.5212rem + 1.1268vw, 3.6621rem);
+    --text-step-5: clamp(3.4332rem, 3.1515rem + 1.4085vw, 4.5776rem);
+    --text-step-6: clamp(4.2915rem, 3.9394rem + 1.7606vw, 5.722rem);
+    --text-step-7: clamp(5.3644rem, 4.9243rem + 2.2008vw, 7.1526rem);
+    --text-step-8: clamp(6.7055rem, 6.1553rem + 2.751vw, 8.9407rem);
+
+    /* Letter Spacing */
+    --letter-spacing-3xs: -1.5%;
+    --letter-spacing-2xs: -0.5%;
+    --letter-spacing-xs: -0.25%;
+    --letter-spacing-s: 0;
+    --letter-spacing-m: 0.25%;
+    --letter-spacing-l: 0.5%;
+    --letter-spacing-xl: 1.5%;
+    --letter-spacing-2xl: 2%;
+
+    /* Spacing */
+    --spacing-3xs: clamp(0.3125rem, 0.2971rem + 0.0769vw, 0.375rem);
+    --spacing-2xs: clamp(0.5625rem, 0.5163rem + 0.2308vw, 0.75rem);
+    --spacing-xs: clamp(0.875rem, 0.8135rem + 0.3077vw, 1.125rem);
+    --spacing-s: clamp(1.125rem, 1.0327rem + 0.4615vw, 1.5rem);
+    --spacing-m: clamp(1.6875rem, 1.549rem + 0.6923vw, 2.25rem);
+    --spacing-l: clamp(2.25rem, 2.0654rem + 0.9231vw, 3rem);
+    --spacing-xl: clamp(3.375rem, 3.0981rem + 1.3846vw, 4.5rem);
+    --spacing-2xl: clamp(4.5rem, 4.1308rem + 1.8462vw, 6rem);
+    --spacing-3xl: clamp(6.75rem, 6.1962rem + 2.7692vw, 9rem);
+
+    --spacing-3xs-2xs: clamp(0.3125rem, 0.2048rem + 0.5385vw, 0.75rem);
+    --spacing-2xs-xs: clamp(0.5625rem, 0.424rem + 0.6923vw, 1.125rem);
+    --spacing-xs-s: clamp(0.875rem, 0.7212rem + 0.7692vw, 1.5rem);
+    --spacing-s-m: clamp(1.125rem, 0.8481rem + 1.3846vw, 2.25rem);
+    --spacing-m-l: clamp(1.6875rem, 1.3644rem + 1.6154vw, 3rem);
+    --spacing-l-xl: clamp(2.25rem, 1.6962rem + 2.7692vw, 4.5rem);
+    --spacing-xl-2xl: clamp(3.375rem, 2.7288rem + 3.2308vw, 6rem);
+    --spacing-2xl-3xl: clamp(4.5rem, 3.3923rem + 5.5385vw, 9rem);
+
+    --spacing-s-l: clamp(1.125rem, 0.6635rem + 2.3077vw, 3rem);
+}
+
+
+
+body {
+    color: var(--color-black-200);
+    transition:
+        color 0.5s,
+        background-color 0.5s;
+    font-family: Rubik, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-wrap: balance;
+}

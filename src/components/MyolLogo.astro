@@ -1,0 +1,21 @@
+---
+import blackCream from '../assets/logos/black-cream.svg'
+import creamBlack from '../assets/logos/cream-black.svg'
+
+const logos = {
+	blackCream,
+	creamBlack,
+}
+
+interface Props {
+	variant?: keyof typeof logos
+}
+
+const { variant = 'blackCream' } = Astro.props
+
+const logoSrc = logos[variant]?.src ?? logos['blackCream'].src
+---
+
+<a href='/' aria-label='home' data-link-name='Logo' class='inline-block h-full'>
+	<img src={logoSrc} alt='MYOL Mini Games Logo' />
+</a>
