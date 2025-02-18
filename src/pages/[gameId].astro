@@ -1,0 +1,27 @@
+---
+import games from '../data/games.json'
+import GameLayout from '../layouts/GameLayout.astro'
+
+export function getStaticPaths() {
+	return games.map((game) => ({
+		params: { gameId: game.id },
+		props: { game },
+	}))
+}
+
+const { game } = Astro.props
+---
+
+<GameLayout title={game.title}>
+	<div class='text-cream-200 px-s'>
+		<h1 class='text-step-2 font-bold py-s'>{game.title}</h1>
+		<div>
+			<iframe
+				src={game.gameUrl}
+				id='game-iframe'
+				width='800'
+				height='450'
+				class='w-full h-[90dvh]'></iframe>
+		</div>
+	</div>
+</GameLayout>
