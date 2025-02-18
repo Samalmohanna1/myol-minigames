@@ -16,6 +16,6 @@ const { variant = 'blackCream' } = Astro.props
 const logoSrc = logos[variant]?.src ?? logos['blackCream'].src
 ---
 
-<a href='/' aria-label='home' data-link-name='Logo' class='inline-block h-full'>
+<a href='/' aria-label='home' class='inline-block'>
 	<img src={logoSrc} alt='MYOL Mini Games Logo' />
 </a>

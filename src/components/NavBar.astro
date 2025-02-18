@@ -4,11 +4,15 @@ import MyolLogo from './MyolLogo.astro'
 ---
 
 <header class='px-s py-2xs border-b-4 border-black-300'>
-	<nav class='flex flex-col gap-s sm:flex-row sm:justify-between'>
-		<div class='flex items-center gap-2xs'>
+	<nav
+		class='flex flex-col gap-s sm:flex-row justify-center sm:justify-between max-w-screen-xl mx-auto px-s'
+	>
+		<div class='flex items-center justify-center gap-2xs'>
 			<MyolLogo />
-			<span class='text-step-0 font-bold'>Mini Games</span>
+			<p class='text-step-0 font-bold'>Mini Games</p>
 		</div>
-		<KofiBtn />
+		<div class='flex justify-center'>
+			<KofiBtn />
+		</div>
 	</nav>
 </header>
