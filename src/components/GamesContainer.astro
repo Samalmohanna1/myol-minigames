@@ -1,0 +1,19 @@
+---
+import ridges from '../assets/ridges.svg'
+import games from '../data/games.json'
+---
+
+<section class='py-xl'>
+	<img class='w-screen' src={ridges.src} alt='' />
+	<div class='py-2xs bg-black-400'>
+		<ul>
+			{
+				games.map((game) => (
+					<li class='bg-pink-300'>
+						<a href={`/${game.id}`}>{game.title}</a>
+					</li>
+				))
+			}
+		</ul>
+	</div>
+</section>

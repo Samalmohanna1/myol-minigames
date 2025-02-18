@@ -1,0 +1,14 @@
+[
+	{
+		"id": "mgs",
+		"title": "My Grandfathers Secret",
+		"description": "An exciting point & click game",
+		"gameUrl": "/games/mgs/index.html"
+	},
+	{
+		"id": "eagleeyes",
+		"title": "Eagle Eyes",
+		"description": "A memory game",
+		"gameUrl": "/games/eagleeyes/index.html"
+	}
+]
