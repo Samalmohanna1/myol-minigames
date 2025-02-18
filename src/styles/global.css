@@ -94,6 +94,9 @@
     --spacing-2xl-3xl: clamp(4.5rem, 3.3923rem + 5.5385vw, 9rem);
 
     --spacing-s-l: clamp(1.125rem, 0.6635rem + 2.3077vw, 3rem);
+
+    /*Drop shadow*/
+    --drop-shadow-hard: calc(var(--spacing-2xs) * -1) var(--spacing-xs) 0px var(--color-black-400);
 }
 
 

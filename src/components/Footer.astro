@@ -2,30 +2,36 @@
 import KofiBtn from './KofiBtn.astro'
 import MyolLogo from './MyolLogo.astro'
 import studioLogo from '../assets/logos/studio-logo.svg'
+import ridges from '../assets/ridges.svg'
 ---
 
-<footer class='py-2xs bg-black-400'>
-	<div
-		class='flex flex-col gap-m sm:items-start sm:flex-row sm:justify-between max-w-screen-xl mx-auto p-s'
-	>
-		<div class='flex items-center justify-center gap-2xs text-cream-200'>
-			<MyolLogo variant='creamBlack' />
-			<div class=''>
-				<p class='text-step-0 font-bold'>Mini Games</p>
-				<p class='text-step--1 sm:text-step--2 font-kode'>
-					Make your own luck, we did!
-				</p>
+<footer>
+	<img class='w-screen' src={ridges.src} alt='' />
+	<div class='py-2xs bg-black-400'>
+		<div
+			class='flex flex-col gap-m sm:items-start sm:flex-row sm:justify-between max-w-screen-xl mx-auto p-s'
+		>
+			<div
+				class='flex items-center justify-center gap-2xs text-cream-200'
+			>
+				<MyolLogo variant='creamBlack' />
+				<div class=''>
+					<p class='text-step-0 font-bold'>Mini Games</p>
+					<p class='text-step--1 sm:text-step--2 font-kode'>
+						Make your own luck, we did!
+					</p>
+				</div>
+			</div>
+			<div class='flex justify-center'>
+				<img
+					class='w-48'
+					src={studioLogo.src}
+					alt='BigKiss LittleKist studio logo'
+				/>
 			</div>
 		</div>
-		<div class='flex justify-center'>
-			<img
-				class='w-48'
-				src={studioLogo.src}
-				alt='BigKiss LittleKist studio logo'
-			/>
+		<div class='py-s border-t-2 border-cream-200 flex justify-center'>
+			<KofiBtn />
 		</div>
-	</div>
-	<div class='py-s border-t-2 border-cream-200 flex justify-center'>
-		<KofiBtn />
 	</div>
 </footer>
