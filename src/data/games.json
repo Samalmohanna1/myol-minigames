@@ -1,14 +1,26 @@
 [
 	{
+		"id": "kamalascoconuts",
+		"title": "Kamalas Coconuts",
+		"description": "A drinks/snacks simulator, and a parody of politics.",
+		"gameUrl": "/games/kamalascoconuts/index.html",
+		"thumbnail": "/games/kamalascoconuts/assets/scenes/title.png",
+		"tags": ["point & click", "simulator"]
+	},
+	{
 		"id": "mgs",
 		"title": "My Grandfathers Secret",
 		"description": "An exciting point & click game",
-		"gameUrl": "/games/mgs/index.html"
+		"gameUrl": "/games/mgs/index.html",
+		"thumbnail": "/games/mgs/assets/scenes/menu.jpg",
+		"tags": ["point & click", "novel"]
 	},
 	{
 		"id": "eagleeyes",
 		"title": "Eagle Eyes",
 		"description": "A memory game",
-		"gameUrl": "/games/eagleeyes/index.html"
+		"gameUrl": "/games/eagleeyes/index.html",
+		"thumbnail": "/games/eagleeyes/assets/og-image.png",
+		"tags": ["memory"]
 	}
 ]
