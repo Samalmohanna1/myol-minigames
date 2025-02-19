@@ -5,12 +5,30 @@ import games from '../data/games.json'
 
 <section class='py-xl'>
 	<img class='w-screen' src={ridges.src} alt='' />
-	<div class='py-2xs bg-black-400'>
-		<ul>
+	<div class='px-s py-2xs bg-black-400'>
+		<ul
+			class='max-w-screen-2xl mx-auto py-l grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-s'
+		>
 			{
 				games.map((game) => (
-					<li class='bg-pink-300'>
-						<a href={`/${game.id}`}>{game.title}</a>
+					<li class='bg-black-100 text-cream-200 border-b-2 border-inherit'>
+						<a
+							href={`/${game.id}`}
+							class='inline-block p-2xs space-y-2xs'
+						>
+							<img src={game.thumbnail} alt={game.title} />
+							<p class='space-x-2xs text-right'>
+								{game.tags.map((tag) => (
+									<span class='bg-black-200 px-2xs py-3xs text-step--2 font-normal'>
+										{tag}
+									</span>
+								))}
+							</p>
+							<p class=' text-step-0 font-bold pt-2xs leading-tight'>
+								{game.title}
+							</p>
+							<p class='font-kode'>{game.description}</p>
+						</a>
 					</li>
 				))
 			}
