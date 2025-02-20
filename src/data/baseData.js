@@ -8,4 +8,5 @@ export default {
 	ogImage: '/og-image.png',
 	// Github URL
 	githubURL: `https://github.com/samalmohanna1`,
+	kofiPage: `https://ko-fi.com/myolcreative`,
 }
