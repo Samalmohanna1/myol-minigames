@@ -10,7 +10,7 @@
 	{
 		"id": "mgs",
 		"title": "My Grandfathers Secret",
-		"description": "An exciting point & click game",
+		"description": "Help Ricky uncover family secrets in this heartfelt point-and-click game made for the GitHub Game Off 2024.",
 		"gameUrl": "/games/mgs/index.html",
 		"thumbnail": "/games/mgs/assets/scenes/menu.jpg",
 		"tags": ["point & click", "novel"]
@@ -22,5 +22,29 @@
 		"gameUrl": "/games/eagleeyes/index.html",
 		"thumbnail": "/games/eagleeyes/assets/og-image.png",
 		"tags": ["memory"]
+	},
+	{
+		"id": "ratsreckoning",
+		"title": "Rats Reckoning",
+		"description": "A short and fun point-and-click game that packs a punch.",
+		"gameUrl": "/games/ratsreckoning/index.html",
+		"thumbnail": "/games/ratsreckoning/thumbnail.png",
+		"tags": ["arcade", "point & click"]
+	},
+	{
+		"id": "booh",
+		"title": "Bat out of Hell",
+		"description": "Welcome to Hell. The only way out is to earn your way out, so start collecting.",
+		"gameUrl": "/games/booh/index.html",
+		"thumbnail": "/games/booh/Frame 1.png",
+		"tags": ["arcade"]
+	},
+	{
+		"id": "fishyfishy",
+		"title": "FishyFishy",
+		"description": "You have two minutes to eat as many fish as possible, eating the wrong fish will end the game.",
+		"gameUrl": "/games/fishyfishy/index.html",
+		"thumbnail": "/games/fishyfishy/Thumbnail.png",
+		"tags": ["arcade"]
 	}
 ]
