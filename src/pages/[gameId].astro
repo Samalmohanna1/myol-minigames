@@ -13,16 +13,22 @@ const { game } = Astro.props
 ---
 
 <GameLayout title={game.title}>
-	<div class='text-cream-200 px-s'>
-		<h1 class='text-step-2 font-bold py-s'>{game.title}</h1>
-		<div>
-			<iframe
-				src={game.gameUrl}
-				id='game-iframe'
-				width='800'
-				height='450'
-				class='w-full h-[90dvh]'
-				allowfullscreen='true'></iframe>
-		</div>
+	<div class='h-dvh border-4 border-cream-300'>
+		<iframe
+			src={game.gameUrl}
+			id='game-iframe'
+			width='800'
+			height='450'
+			class='w-full h-full'
+			allowfullscreen='true'></iframe>
+	</div>
+
+	<div class='py-l text-center'>
+		<a
+			href='/'
+			aria-label='home'
+			class='inline-block bg-cream-200 hover:bg-cream-300 border-2 border-cream-100 px-xs py-2xs font-kode font-bold'
+			>Back to games
+		</a>
 	</div>
 </GameLayout>
