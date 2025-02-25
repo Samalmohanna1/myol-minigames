@@ -51,6 +51,6 @@ const image = Astro.props.image || baseData.ogImage
 
 	posthog.init('phc_94ik1KYUWEhH8mOK7Y3c4eSuq8nxZlayUtrPl3yF9N1', {
 		api_host: 'https://us.i.posthog.com',
-		person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
+		person_profiles: 'always',
 	})
 </script>
