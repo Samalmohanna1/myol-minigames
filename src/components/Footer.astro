@@ -1,55 +1,60 @@
 ---
 import KofiBtn from './KofiBtn.astro'
 import MyolLogo from './MyolLogo.astro'
-import studioLogo from '../assets/logos/studio-logo.svg'
-import ridges from '../assets/ridges.svg'
+import NoiseWrapper from './NoiseWrapper.astro'
 ---
 
 <footer>
-	<img class='w-screen' src={ridges.src} alt='' />
-	<div class='py-2xs bg-black-400'>
-		<div
-			class='flex flex-col gap-xl sm:gap-m sm:items-start sm:flex-row sm:justify-between max-w-screen-xl mx-auto p-s'
-		>
-			<div
-				class='flex items-center justify-center gap-2xs text-cream-200'
-			>
-				<MyolLogo variant='creamBlack' />
-				<div class=''>
-					<p class='text-step-0 font-bold'>Mini Games</p>
-					<p class='text-step--1 sm:text-step--2 font-kode'>
-						Make your own luck, we did!
-					</p>
+	<div class='max-w-screen-2xl mx-auto rounded-t-lg overflow-hidden'>
+		<NoiseWrapper>
+			<div class='px-s py-lg bg-black-400/20'>
+				<div
+					class='flex flex-col gap-xl sm:gap-m sm:items-start sm:flex-row sm:justify-between max-w-screen-xl mx-auto p-s'
+				>
+					<div
+						class='flex items-center justify-center gap-2xs text-cream-500'
+					>
+						<MyolLogo variant='creamBlack' />
+						<div class=''>
+							<p
+								class='text-step-0 font-bold font-robotoCondensed'
+							>
+								Mini Games
+							</p>
+							<p class='text-step--1 sm:text-step--2 font-light'>
+								Make your own luck, we did!
+							</p>
+						</div>
+					</div>
+					<div
+						class='flex flex-col sm:flex-row gap-m md:gap-xl items-center sm:items-start'
+					>
+						<div
+							class='text-cream-500 font-bold flex gap-xs font-robotoCondensed'
+						>
+							<a
+								href='/about'
+								aria-label='about'
+								class='inline-block rounded-sm border-2 border-inherit py-2xs px-s hover:bg-black-500'
+								>About</a
+							>
+							<a
+								href='https://wheat-fragrance-67b.notion.site/1a159febf5ad80f7ae72f153de397deb?pvs=105'
+								target='_blank'
+								rel='noopener noreferrer'
+								aria-label='contact'
+								class='inline-block rounded-sm border-2 border-inherit py-2xs px-s hover:bg-black-500'
+								>Contact</a
+							>
+						</div>
+					</div>
+				</div>
+				<div
+					class='py-s border-t-2 border-cream-500/60 flex justify-center'
+				>
+					<KofiBtn />
 				</div>
 			</div>
-			<div
-				class='flex flex-col sm:flex-row gap-m md:gap-xl items-center sm:items-start'
-			>
-				<div class='text-cream-200 font-bold font-kode flex gap-xs'>
-					<a
-						href='/about'
-						aria-label='about'
-						class='inline-block border-t-2 border-inherit p-2xs'
-						>About</a
-					>
-					<a
-						href='https://wheat-fragrance-67b.notion.site/1a159febf5ad80f7ae72f153de397deb?pvs=105'
-						target='_blank'
-						rel='noopener noreferrer'
-						aria-label='contact'
-						class='inline-block border-t-2 border-inherit p-2xs'
-						>Contact</a
-					>
-				</div>
-				<img
-					class='w-48'
-					src={studioLogo.src}
-					alt='BigKiss LittleKist studio logo'
-				/>
-			</div>
-		</div>
-		<div class='py-s border-t-2 border-cream-200 flex justify-center'>
-			<KofiBtn />
-		</div>
+		</NoiseWrapper>
 	</div>
 </footer>
