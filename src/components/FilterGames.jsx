@@ -51,7 +51,7 @@ export default function GamesContainer() {
 				{filteredGames.map((game) => (
 					<li
 						key={game.id}
-						className='bg-black-500 text-cream-200 rounded-sm overflow-hidden mx-auto'
+						className='bg-black-500 text-cream-500 rounded-sm overflow-hidden mx-auto'
 					>
 						<a href={`/${game.id}`} className='inline-block'>
 							<img src={game.thumbnail} alt={game.title} />
@@ -60,7 +60,7 @@ export default function GamesContainer() {
 									{game.tags.map((tag) => (
 										<span
 											key={tag}
-											className='bg-cream-200 text-black-400 px-2xs py-3xs text-step--2 font-normal rounded-sm'
+											className='bg-yellow-400/80 text-black-500 px-2xs py-3xs text-step--2 rounded-full'
 										>
 											{tag}
 										</span>
