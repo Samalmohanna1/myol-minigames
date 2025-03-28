@@ -1,0 +1,13 @@
+<div class='relative'>
+	<!-- Noise layer -->
+	<div
+		class='absolute inset-0 z-0 pointer-events-none mix-blend-luminosity opacity-10'
+		style="background-image: url('/noise.png'); background-repeat: repeat;"
+	>
+	</div>
+
+	<!-- content -->
+	<div class='relative z-10'>
+		<slot />
+	</div>
+</div>

@@ -1,18 +1,27 @@
 ---
 import KofiBtn from './KofiBtn.astro'
 import MyolLogo from './MyolLogo.astro'
+import NoiseWrapper from './NoiseWrapper.astro'
 ---
 
-<header class='py-2xs border-b-4 border-black-300'>
-	<nav
-		class='flex flex-col gap-s sm:flex-row justify-center sm:justify-between max-w-screen-xl mx-auto px-s'
-	>
-		<div class='flex items-center justify-center gap-2xs'>
-			<MyolLogo />
-			<p class='text-step-0 font-bold'>Mini Games</p>
-		</div>
-		<div class='flex justify-center'>
-			<KofiBtn />
-		</div>
-	</nav>
+<header class='py-2xs'>
+	<div class='max-w-screen-2xl mx-auto rounded-lg overflow-hidden'>
+		<NoiseWrapper>
+			<div class='bg-black-400/20'>
+				<nav
+					class='flex flex-col gap-s sm:flex-row justify-center sm:justify-between max-w-screen-2xl mx-auto px-s py-3xs text-cream-500'
+				>
+					<div class='flex items-center justify-center gap-2xs'>
+						<MyolLogo variant='creamBlack' />
+						<p class='text-step-0 font-bold font-robotoCondensed'>
+							Mini Games
+						</p>
+					</div>
+					<div class='flex justify-center border-cream-500'>
+						<KofiBtn />
+					</div>
+				</nav>
+			</div>
+		</NoiseWrapper>
+	</div>
 </header>

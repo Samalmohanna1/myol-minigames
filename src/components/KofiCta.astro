@@ -2,29 +2,43 @@
 import KofiBtn from './KofiBtn.astro'
 import yellowBlob from '../assets/blobs/yellow.png'
 import blueBlob from '../assets/blobs/blue.png'
+import NoiseWrapper from './NoiseWrapper.astro'
 ---
 
-<div class='px-s py-3xl relative'>
-	<img
-		class='absolute right-s md:right-48 lg:right-96 top-[-10%] lg:top-[-4%] drop-shadow-hard motion-safe:animate-[bounce_3s_ease-in-out_infinite]'
-		src={blueBlob.src}
-		alt=''
-	/>
-	<div
-		class='p-m sm:p-xl border-4 border-inherit bg-cream-200 max-w-4xl mx-auto space-y-l drop-shadow-hard relative'
-	>
-		<p class='text-step-0 font-bold font-kode'>
-			We love games, and think you should enjoy them ad free, tracking
-			free, no strings attached. Your support keeps us going!
-		</p>
+<div
+	class='bg-orange-500 max-w-screen-2xl mx-auto rounded-lg overflow-hidden border-2 border-cream-500'
+>
+	<NoiseWrapper>
+		<div class='px-s py-3xl'>
+			<img
+				class='absolute right-s md:right-48 lg:right-96 top-[1%] drop-shadow-hard motion-safe:animate-[bounce_3s_ease-in-out_infinite] z-20'
+				src={blueBlob.src}
+				alt=''
+			/>
+			<div class='p-s max-w-8xl text-black-500 space-y-s'>
+				<h2
+					class='uppercase font-robotoCondensed font-medium text-step-1'
+				>
+					How We Keep Going
+				</h2>
+				<p
+					class='text-step-4 md:text-step-5 font-black font-robotoCondensed leading-none'
+				>
+					We rely on donations and sponsors to keep our studio
+					running, so every bit of help counts. If you enjoy our
+					games, consider showing your support so we can keep making
+					more!
+				</p>
+			</div>
 
-		<div class='flex justify-center mb-0'>
-			<KofiBtn />
+			<div class='flex justify-center pt-m'>
+				<KofiBtn />
+			</div>
+			<img
+				class='absolute left-m bottom-l drop-shadow-hard z-20 motion-safe:animate-bounce'
+				src={yellowBlob.src}
+				alt=''
+			/>
 		</div>
-		<img
-			class='absolute left-[-4%] bottom-[-8%] sm:bottom-s z-20 motion-safe:animate-bounce'
-			src={yellowBlob.src}
-			alt=''
-		/>
-	</div>
+	</NoiseWrapper>
 </div>
