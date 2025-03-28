@@ -13,7 +13,7 @@ const { game } = Astro.props
 ---
 
 <GameLayout title={game.title}>
-	<div class='h-dvh border-4 border-cream-300'>
+	<div class='h-dvh border-4 border-black-500'>
 		<iframe
 			src={game.gameUrl}
 			id='game-iframe'
@@ -27,7 +27,7 @@ const { game } = Astro.props
 		<a
 			href='/'
 			aria-label='home'
-			class='inline-block bg-cream-200 hover:bg-cream-300 border-2 border-cream-100 px-xs py-2xs font-kode font-bold'
+			class='inline-block bg-cream-500 hover:bg-cream-600 px-xs py-2xs font-bold font-robotoCondensed rounded-sm text-black-500'
 			>Back to games
 		</a>
 	</div>
