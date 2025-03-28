@@ -1,11 +1,14 @@
 ---
-import ridges from '../assets/ridges.svg'
 import FilterGames from './FilterGames'
+import NoiseWrapper from './NoiseWrapper.astro'
 ---
 
 <section class='pb-xl'>
-	<img class='w-screen' src={ridges.src} alt='' />
-	<div class='px-s pt-2xs pb-xl bg-black-400'>
-		<FilterGames client:load />
+	<div class='max-w-screen-2xl mx-auto rounded-lg overflow-hidden'>
+		<NoiseWrapper>
+			<div class='px-s py-xl bg-black-400/20'>
+				<FilterGames client:load />
+			</div>
+		</NoiseWrapper>
 	</div>
 </section>
