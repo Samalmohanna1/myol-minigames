@@ -6,7 +6,7 @@ import games from '../data/games.json'
 <section class='pb-xl'>
 	<div class='max-w-screen-2xl mx-auto rounded-lg overflow-hidden'>
 		<h1
-			class='text-step-4 font-bold font-robotoCondensed leading-tight text-cream-500 py-s'
+			class='text-step-3 sm:text-step-4 font-bold font-robotoCondensed leading-tight text-cream-500 py-s'
 		>
 			&#127918; Latest & Greatest
 		</h1>
@@ -28,7 +28,7 @@ import games from '../data/games.json'
 											alt={game.title}
 											class='relative'
 										/>
-										<div class='px-2xs py-xs absolute z-20 bottom-0 text-cream-200 bg-gradient-to-b from-black-500/0 via-black-500 to-black-500 w-full h-[60%] flex flex-col justify-end'>
+										<div class='px-2xs py-xs absolute z-20 bottom-0 text-cream-200 bg-gradient-to-b from-black-500/0 via-black-500 to-black-500 w-full h-[80%] sm:h-[60%] flex flex-col justify-end'>
 											<p>
 												<span
 													class={`px-2xs py-3xs text-step--1 font-medium rounded-sm uppercase ${game.status === 'new' ? 'bg-yellow-500' : 'bg-orange-500'} text-black-500`}

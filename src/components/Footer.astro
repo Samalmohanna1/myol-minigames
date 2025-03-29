@@ -2,6 +2,8 @@
 import KofiBtn from './KofiBtn.astro'
 import MyolLogo from './MyolLogo.astro'
 import NoiseWrapper from './NoiseWrapper.astro'
+import kofiBean from '../assets/gifs/Ko-fi-bean.gif'
+import sparkleMug from '../assets/gifs/Sparkle-mug.gif'
 ---
 
 <footer>
@@ -9,7 +11,7 @@ import NoiseWrapper from './NoiseWrapper.astro'
 		<NoiseWrapper>
 			<div class='px-s py-lg bg-black-400/20'>
 				<div
-					class='flex flex-col gap-xl sm:gap-m sm:items-start sm:flex-row sm:justify-between max-w-screen-2xl mx-auto p-s'
+					class='flex flex-col gap-m sm:items-start sm:flex-row sm:justify-between max-w-screen-2xl mx-auto p-s'
 				>
 					<div
 						class='flex items-center justify-center gap-2xs text-cream-500'
@@ -50,9 +52,23 @@ import NoiseWrapper from './NoiseWrapper.astro'
 					</div>
 				</div>
 				<div
-					class='py-s border-t-2 border-cream-500/60 flex justify-center'
+					class='py-m border-t-2 border-cream-500/60 flex flex-col sm:flex-row items-center justify-center gap-s'
 				>
-					<KofiBtn />
+					<img
+						class='w-[30%] sm:w-[12%] h-auto'
+						src={kofiBean.src}
+						alt=''
+					/>
+					<div
+						class='border-cream-500 flex justify-center items-center'
+					>
+						<KofiBtn />
+					</div>
+					<img
+						class='w-[30%] sm:w-[12%] h-auto'
+						src={sparkleMug.src}
+						alt=''
+					/>
 				</div>
 			</div>
 		</NoiseWrapper>
