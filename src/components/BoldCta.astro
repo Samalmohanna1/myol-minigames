@@ -1,12 +1,15 @@
 ---
 import data from '../data/baseData'
+import Heading from './Heading.astro'
+
+const { headingLevel } = Astro.props
 ---
 
 <div class='px-s py-3xl max-w-screen-2xl mx-auto text-cream-500'>
-	<p
+	<Heading
+		level={headingLevel}
 		class='text-step-4 sm:text-step-6 font-bold font-robotoCondensed leading-tight'
-	>
-		We &#128151; making games, and we think you should enjoy them ad free,
+		>We &#128151; making games, and we think you should enjoy them ad free,
 		tracking free, no strings attached. Your
 		<a
 			href={data.kofiPage}
@@ -15,6 +18,6 @@ import data from '../data/baseData'
 			aria-label='kofi-page'
 		>
 			<span class='text-green-600 italic'>&#128181;support&#128176;</span>
-		</a> keeps us going!
-	</p>
+		</a> keeps us going!</Heading
+	>
 </div>

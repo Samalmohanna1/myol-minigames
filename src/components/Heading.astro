@@ -1,0 +1,11 @@
+---
+interface Props {
+	level: 1 | 2 | 3 | 4 | 5 | 6
+	class?: string
+}
+
+const { level, class: className = '' } = Astro.props
+const Tag = `h${level}`
+---
+
+<Tag class:list={className}><slot /></Tag>
