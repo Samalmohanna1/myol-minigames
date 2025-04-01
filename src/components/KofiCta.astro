@@ -3,6 +3,9 @@ import KofiBtn from './KofiBtn.astro'
 import yellowBlob from '../assets/blobs/yellow.png'
 import blueBlob from '../assets/blobs/blue.png'
 import NoiseWrapper from './NoiseWrapper.astro'
+import Heading from './Heading.astro'
+
+const { headingLevel } = Astro.props
 ---
 
 <div
@@ -16,11 +19,11 @@ import NoiseWrapper from './NoiseWrapper.astro'
 				alt=''
 			/>
 			<div class='p-s max-w-8xl text-black-500 space-y-s'>
-				<h2
+				<Heading
+					level={headingLevel}
 					class='uppercase font-robotoCondensed font-medium text-step-1'
+					>How We Keep Going</Heading
 				>
-					How We Keep Going
-				</h2>
 				<p
 					class='text-step-3 md:text-step-5 font-black font-robotoCondensed leading-none'
 				>

@@ -1,15 +1,19 @@
 ---
 import NoiseWrapper from './NoiseWrapper.astro'
 import games from '../data/games.json'
+import Heading from './Heading.astro'
+
+const { headingLevel } = Astro.props
 ---
 
 <section class='pb-xl'>
 	<div class='max-w-screen-2xl mx-auto rounded-lg overflow-hidden'>
-		<h1
-			class='text-step-3 sm:text-step-4 font-bold font-robotoCondensed leading-tight text-cream-500 py-s'
+		<Heading
+			level={headingLevel}
+			class='text-step-3 sm:text-step-4 font-bold font-robotoCondensed leading-tight text-cream-500 p-s'
 		>
 			&#127918; Latest & Greatest
-		</h1>
+		</Heading>
 		<NoiseWrapper>
 			<div
 				class='px-s py-m bg-black-400/20 grid grid-cols-1 lg:grid-cols-2 gap-s'

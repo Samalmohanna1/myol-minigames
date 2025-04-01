@@ -18,9 +18,9 @@ export default function GamesContainer() {
 	return (
 		<div className='max-w-screen-2xl mx-auto space-y-m'>
 			<div className='p-xs bg-black-500 rounded-lg space-x-2xs flex flex-col md:flex-row gap-s md:gap-2xs md:items-center'>
-				<p className='text-cream-200 inline pr-2xs font-bold font-robotoCondensed uppercase'>
+				{/* <p className='text-cream-200 inline pr-2xs font-bold font-robotoCondensed uppercase'>
 					Game Categories:
-				</p>
+				</p> */}
 				<div>
 					<button
 						onClick={() => handleFilterChange('All')}
@@ -30,7 +30,7 @@ export default function GamesContainer() {
 								: 'bg-black-500 text-cream-200'
 						} px-2xs py-3xs hover:cursor-pointer rounded-sm uppercase`}
 					>
-						<span className='text-step--2'>All</span>
+						<span className='text-step--2'>All Games</span>
 					</button>
 					{allTags.map((tag) => (
 						<button

@@ -1,10 +1,19 @@
 ---
 import FilterGames from './FilterGames'
 import NoiseWrapper from './NoiseWrapper.astro'
+import Heading from './Heading.astro'
+
+const { headingLevel } = Astro.props
 ---
 
 <section class='pb-xl'>
 	<div class='max-w-screen-2xl mx-auto rounded-lg overflow-hidden'>
+		<Heading
+			level={headingLevel}
+			class='text-step-3 sm:text-step-4 font-bold font-robotoCondensed leading-tight text-cream-500 p-s'
+		>
+			&#128302; Game Catalog
+		</Heading>
 		<NoiseWrapper>
 			<div class='px-s py-m bg-black-400/20'>
 				<FilterGames client:load />
