@@ -16,6 +16,10 @@
     src: url(/font/RobotoCondensed-VariableFont_wght.ttf);
 }
 
+.hover-transition {
+    @apply transition-all ease-out duration-500;
+}
+
 
 @theme {
     --font-roboto: Roboto, sans-serif;

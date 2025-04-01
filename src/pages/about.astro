@@ -2,25 +2,28 @@
 import BoldCta from '../components/BoldCta.astro'
 import KofiCta from '../components/KofiCta.astro'
 import BaseLayout from '../layouts/BaseLayout.astro'
+import Heading from '../components/Heading.astro'
 ---
 
 <BaseLayout title='About Us | MYOL MiniGames'>
 	<div class='py-3xl space-y-3xl max-w-screen-2xl mx-auto'>
 		<div class='px-s max-w-8xl text-cream-500 space-y-s'>
-			<h1 class='uppercase font-robotoCondensed'>About MYOL</h1>
+			<Heading level={1} class='uppercase font-robotoCondensed'
+				>About MYOL</Heading
+			>
 			<p
 				class='text-step-2 sm:text-step-4 font-bold font-robotoCondensed sm:leading-tight'
 			>
 				We&apos;re an indie game studio founded by two sisters: Sam &
 				Summer. After a few rough years of layoffs and instability in
-				the tech industry we decided to bet on ourselves and follow our
-				dreams. We hope our games bring you a little joy, inspiration,
-				and laughter.
+				the tech industry we decided to bet on ourselves, make our own
+				luck, and follow our dreams. We hope our games bring you a
+				little joy, inspiration, and laughter.
 			</p>
 		</div>
 
-		<KofiCta />
+		<KofiCta headingLevel={2} />
 
-		<BoldCta />
+		<BoldCta headingLevel={3} />
 	</div>
 </BaseLayout>
