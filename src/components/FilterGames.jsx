@@ -26,8 +26,8 @@ export default function GamesContainer() {
 						onClick={() => handleFilterChange('All')}
 						className={`${
 							filter === 'All'
-								? 'bg-cream-200 text-black-400'
-								: 'bg-black-500 text-cream-200'
+								? 'bg-yellow-300 text-black-400'
+								: 'bg-black-500 text-yellow-300'
 						} px-2xs py-3xs hover:cursor-pointer rounded-sm uppercase`}
 					>
 						<span className='text-step--2'>All Games</span>
@@ -38,8 +38,8 @@ export default function GamesContainer() {
 							onClick={() => handleFilterChange(tag)}
 							className={`${
 								filter === tag
-									? 'bg-cream-200 text-black-400'
-									: 'bg-black-500 text-cream-200'
+									? 'bg-yellow-300 text-black-400'
+									: 'bg-black-500 text-yellow-300'
 							} px-2xs py-3xs hover:cursor-pointer rounded-sm uppercase`}
 						>
 							<span className='text-step--2'>{tag}</span>
@@ -51,7 +51,7 @@ export default function GamesContainer() {
 				{filteredGames.map((game) => (
 					<li
 						key={game.id}
-						className='bg-black-500 text-cream-500 rounded-sm overflow-hidden mx-auto'
+						className='bg-black-500 text-cream-500 rounded-sm overflow-hidden mx-auto border-2 border-cream-500 hover:border-yellow-500 hover-transition'
 					>
 						<a href={`/${game.id}`} className='inline-block'>
 							<img src={game.thumbnail} alt={game.title} />
@@ -60,7 +60,7 @@ export default function GamesContainer() {
 									{game.tags.map((tag) => (
 										<span
 											key={tag}
-											className='bg-yellow-400/80 text-black-500 px-2xs py-3xs text-step--2 rounded-full'
+											className='bg-yellow-300 text-black-500 p-3xs text-sm rounded-sm'
 										>
 											{tag}
 										</span>
