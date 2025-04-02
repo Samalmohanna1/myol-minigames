@@ -22,26 +22,23 @@ const { headingLevel } = Astro.props
 					games.map(
 						(game) =>
 							game.status && (
-								<div class='mx-auto'>
-									<a
-										href={`/${game.id}`}
-										class='inline-block relative rounded-sm overflow-hidden'
-									>
+								<div class='mx-auto border-4 border-cream-500 hover:border-yellow-500 hover-transition overflow-hidden rounded-sm'>
+									<a href={`/${game.id}`}>
 										<img
 											src={game.thumbnail}
 											alt={game.title}
-											class='relative'
+											class=''
 										/>
-										<div class='px-2xs py-xs absolute z-20 bottom-0 text-cream-200 bg-gradient-to-b from-black-500/0 via-black-500 to-black-500 w-full h-[80%] sm:h-[60%] flex flex-col justify-end'>
-											<p>
+										<div class='px-2xs py-xs space-y-2xs text-cream-200 bg-black-500 flex flex-col h-full'>
+											{/* <p>
 												<span
 													class={`px-2xs py-3xs text-step--1 font-medium rounded-sm uppercase ${game.status === 'new' ? 'bg-yellow-500' : 'bg-orange-500'} text-black-500`}
 												>
 													{game.status}
 												</span>
-											</p>
+											</p> */}
 
-											<p class='text-step-1 font-bold font-robotoCondensed uppercase pt-xs pb-2xs leading-tight'>
+											<p class='text-step-1 font-bold font-robotoCondensed uppercase leading-tight'>
 												{game.title}
 											</p>
 											<p class='font-light text-cream-500/80'>
