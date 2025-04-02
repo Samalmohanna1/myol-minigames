@@ -60,7 +60,7 @@ export default function GamesContainer() {
 									{game.tags.map((tag) => (
 										<span
 											key={tag}
-											className='bg-yellow-400/80 text-black-500 px-2xs py-3xs text-step--2 rounded-full'
+											className='bg-cream-500/75 text-black-500 p-3xs text-sm rounded-sm'
 										>
 											{tag}
 										</span>
