@@ -22,7 +22,7 @@ const { headingLevel } = Astro.props
 					games.map(
 						(game) =>
 							game.status && (
-								<div class='mx-auto border-4 border-cream-500 hover:border-yellow-500 hover-transition overflow-hidden rounded-sm'>
+								<div class='mx-auto border-4 border-cream-500 hover:border-yellow-500 hover-transition overflow-hidden rounded-sm opacity-80 hover:opacity-100'>
 									<a href={`/${game.id}`}>
 										<img
 											src={game.thumbnail}
