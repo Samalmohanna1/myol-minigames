@@ -1,31 +1,26 @@
 ---
 import KofiBtn from './KofiBtn.astro'
 import MyolLogo from './MyolLogo.astro'
-import NoiseWrapper from './NoiseWrapper.astro'
 ---
 
 <header class='pb-2xs'>
 	<div class='max-w-screen-2xl mx-auto rounded-b-lg overflow-hidden'>
-		<NoiseWrapper>
-			<div class='bg-black-400/20'>
-				<nav
-					class='flex flex-col gap-s sm:flex-row justify-center sm:justify-between max-w-screen-2xl mx-auto px-s py-2xs text-cream-500'
-				>
-					<div class='flex items-center justify-center gap-2xs'>
-						<MyolLogo
-							fillColor='black-500'
-							strokeColorHover='group-hover:stroke-yellow-500'
-							strokeColor='stroke-cream-500'
-						/>
-						<p class='text-step-0 font-bold font-robotoCondensed'>
-							Mini Games
-						</p>
-					</div>
-					<div class='flex justify-center border-cream-500'>
-						<KofiBtn />
-					</div>
-				</nav>
+		<nav
+			class='flex flex-col gap-s sm:flex-row justify-center sm:justify-between max-w-screen-2xl mx-auto px-s py-2xs text-cream-500'
+		>
+			<div class='flex items-center justify-center gap-2xs'>
+				<MyolLogo
+					fillColor='black-500'
+					strokeColorHover='group-hover:stroke-yellow-500'
+					strokeColor='stroke-cream-500'
+				/>
+				<p class='text-step-0 font-bold font-robotoCondensed'>
+					Mini Games
+				</p>
 			</div>
-		</NoiseWrapper>
+			<div class='flex justify-center border-cream-500'>
+				<KofiBtn />
+			</div>
+		</nav>
 	</div>
 </header>

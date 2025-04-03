@@ -51,7 +51,7 @@ export default function GamesContainer() {
 				{filteredGames.map((game) => (
 					<li
 						key={game.id}
-						className='bg-black-500 text-cream-500 rounded-sm overflow-hidden mx-auto border-2 border-cream-500 hover:border-yellow-500 hover-transition'
+						className='bg-black-500 text-cream-500 rounded-sm overflow-hidden mx-auto border-2 border-cream-500 hover:border-yellow-500 hover-transition opacity-80 hover:opacity-100'
 					>
 						<a href={`/${game.id}`} className='inline-block'>
 							<img src={game.thumbnail} alt={game.title} />
