@@ -5,6 +5,7 @@
 		"description": "A drinks/snacks simulator, and a parody of politics.",
 		"gameUrl": "/games/kamalascoconuts/index.html",
 		"thumbnail": "/games/kamalascoconuts/assets/scenes/title.png",
+		"video": "/previews/ee-vid.mp4",
 		"tags": ["point & click", "simulator"],
 		"status": "new"
 	},
@@ -13,7 +14,8 @@
 		"title": "My Grandfathers Secret",
 		"description": "Help Ricky uncover family secrets in this heartfelt point-and-click game made for the GitHub Game Off 2024.",
 		"gameUrl": "/games/mgs/index.html",
-		"thumbnail": "/games/mgs/assets/scenes/menu.jpg",
+		"thumbnail": "/games/mgs/assets/scenes/Thumbnail.png",
+		"video": "/previews/mgs-vid.mp4",
 		"tags": ["point & click", "novel"],
 		"status": ""
 	},
@@ -23,6 +25,7 @@
 		"description": "A memory game",
 		"gameUrl": "/games/eagleeyes/index.html",
 		"thumbnail": "/games/eagleeyes/assets/og-image.png",
+		"video": "/previews/ee-vid.mp4",
 		"tags": ["memory"],
 		"status": ""
 	},
@@ -32,6 +35,7 @@
 		"description": "A short and fun point-and-click game that packs a punch.",
 		"gameUrl": "/games/ratsreckoning/index.html",
 		"thumbnail": "/games/ratsreckoning/thumbnail.png",
+		"video": "/previews/rr-vid.mp4",
 		"tags": ["arcade", "point & click"],
 		"status": ""
 	},
@@ -41,6 +45,7 @@
 		"description": "Welcome to Hell. The only way out is to earn your way out, so start collecting.",
 		"gameUrl": "/games/booh/index.html",
 		"thumbnail": "/games/booh/Frame 1.png",
+		"video": "/previews/boh-vid.mp4",
 		"tags": ["arcade"],
 		"status": ""
 	},
@@ -50,6 +55,7 @@
 		"description": "You have two minutes to eat as many fish as possible, eating the wrong fish will end the game.",
 		"gameUrl": "/games/fishyfishy/index.html",
 		"thumbnail": "/games/fishyfishy/Thumbnail.png",
+		"video": "/previews/ff-vid.mp4",
 		"tags": ["arcade"],
 		"status": "popular"
 	}
