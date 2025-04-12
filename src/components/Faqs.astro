@@ -1,0 +1,34 @@
+---
+import Question from './Question'
+import faqs from '../data/faqs.json'
+import Heading from './Heading.astro'
+
+interface Props {
+	headingLevel: 1 | 2 | 3 | 4 | 5 | 6
+}
+
+const { headingLevel } = Astro.props
+---
+
+<div class='max-w-screen-xl flex flex-col xl:flex-row gap-2xs mx-auto py-xl'>
+	<div class='px-2xl py-m bg-yellow-400 rounded-lg'>
+		<Heading
+			level={headingLevel}
+			class='text-step-3 sm:text-step-4 font-black text-black-500 leading-none uppercase tracking-xl font-robotoCondensed'
+			>Faqs</Heading
+		>
+	</div>
+	<div class='w-full space-y-2xs'>
+		{
+			faqs.map((faq) => (
+				<div class='p-s rounded-lg bg-cream-400'>
+					<Question
+						question={faq.question}
+						answer={faq.answer}
+						client:visible
+					/>
+				</div>
+			))
+		}
+	</div>
+</div>
