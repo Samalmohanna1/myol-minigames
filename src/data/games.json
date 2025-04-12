@@ -1,15 +1,5 @@
 [
 	{
-		"id": "kamalascoconuts",
-		"title": "Kamalas Coconuts",
-		"description": "A drinks/snacks simulator, and a parody of politics.",
-		"gameUrl": "/games/kamalascoconuts/index.html",
-		"thumbnail": "/games/kamalascoconuts/assets/scenes/title.png",
-		"video": "/previews/ee-vid.mp4",
-		"tags": ["point & click", "simulator"],
-		"status": "new"
-	},
-	{
 		"id": "mgs",
 		"title": "My Grandfathers Secret",
 		"description": "Help Ricky uncover family secrets in this heartfelt point-and-click game made for the GitHub Game Off 2024.",
@@ -17,7 +7,7 @@
 		"thumbnail": "/games/mgs/assets/scenes/Thumbnail.png",
 		"video": "/previews/mgs-vid.mp4",
 		"tags": ["point & click", "novel"],
-		"status": ""
+		"status": "new"
 	},
 	{
 		"id": "eagleeyes",
