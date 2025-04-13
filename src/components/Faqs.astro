@@ -10,7 +10,9 @@ interface Props {
 const { headingLevel } = Astro.props
 ---
 
-<div class='max-w-screen-xl flex flex-col xl:flex-row gap-2xs mx-auto py-xl'>
+<div
+	class='max-w-screen-2xl flex flex-col xl:flex-row gap-2xs mx-auto py-xl px-m'
+>
 	<div class='px-2xl py-m bg-yellow-400 rounded-lg'>
 		<Heading
 			level={headingLevel}
