@@ -12,18 +12,14 @@ const Question: React.FC<QuestionProps> = ({ question, answer }) => {
 	return (
 		<div>
 			<button
-				className='w-full text-left flex justify-between items-center focus:outline-none hover:cursor-pointer text-black-500'
+				className='w-full text-left flex justify-between items-center focus:outline-none hover:cursor-pointer text-black-500 [&_p]:font-bold [&_p]:text-step-2 [&_p]:leading-tight'
 				onClick={() => setIsOpen(!isOpen)}
 			>
-				<span className='font-robotoCondensed font-bold text-step-0'>
-					{question}
-				</span>
-				<span className='font-robotoCondensed font-bold text-step-0'>
-					{isOpen ? '-' : '+'}
-				</span>
+				<p className='font-robotoCondensed'>{question}</p>
+				<p>{isOpen ? '-' : '+'}</p>
 			</button>
 			{isOpen && (
-				<div className='pt-2xs text-black-400 text-step--1 answers'>
+				<div className='pt-2xs text-black-400 text-step-1 font-light leading-snug answers'>
 					<ReactMarkdown>{answer}</ReactMarkdown>
 				</div>
 			)}

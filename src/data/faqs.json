@@ -1,19 +1,15 @@
 [
 	{
 		"question": "Are the games really free to play?",
-		"answer": "Yes! All games are completely free to play, with no ads, creepy trackers, or hidden fees. We want to make gaming accessible and enjoyable for everyone."
-	},
-	{
-		"question": "Can I suggest a game idea?",
-		"answer": "Absolutely! We love hearing from our community. Use the contact form to share your ideas."
+		"answer": "Yes! All games are completely free to play, with no ads or creepy trackers."
 	},
 	{
 		"question": "Do I need an account to play?",
 		"answer": "Nope. No accounts, logins, or personal data required. Just visit the site and start playing."
 	},
 	{
-		"question": "Why don't you use ads or trackers?",
-		"answer": "We believe ads and trackers are intrusive. They slow down your experience, clutter the screen, and often involve selling user data to third parties. To protect your privacy and keep our site creep-free, we've opted for a donation model instead. We only use basic, anonymized analytics to improve the user experience and monitor site performance. No personal data is stored or shared."
+		"question": "Why no ads, don't you want to make money?",
+		"answer": "Ads can be super annoying and creepy, so we ditched them for a donation model instead. We use basic analytics to make sure everything runs smoothly, but we never sell or share your data."
 	},
 	{
 		"question": "How do you keep the site running?",
@@ -24,15 +20,15 @@
 		"answer": "Donations are non-refundable, as they directly support our ongoing development and operational costs. We deeply appreciate your generosity!"
 	},
 	{
-		"question": "Will there be subscription plans?",
-		"answer": "We don't currently offer member subscriptions, but we're planning to introduce optional member tiers in the near future with exclusive perks. Stay tuned!"
+		"question": "What are the benefits of sponsoring MYOL MiniGames?",
+		"answer": "Right now, we don't have specific sponsor benefits, but we're super grateful for your support! It helps us keep making new games and maintaining our site ad-free, tracking-free. We're actually working on some cool membership tiers and perks, so stay tuned for updates!"
+	},
+	{
+		"question": "Can I suggest a game idea?",
+		"answer": "Absolutely! We love hearing from our community. Use the [contact form](https://wheat-fragrance-67b.notion.site/1a159febf5ad80f7ae72f153de397deb?pvs=105) to share your ideas."
 	},
 	{
 		"question": "How do I contact you?",
 		"answer": "Reach us via email at [contact@myol-creative.com](mailto:contact@myol-creative.com) or use the [contact form](https://wheat-fragrance-67b.notion.site/1a159febf5ad80f7ae72f153de397deb?pvs=105). We'll do our best to reply within 2-3 business days."
-	},
-	{
-		"question": "Can I sponsor your studio or collaborate?",
-		"answer": "Yes! We're always open to partnerships. Email us at [contact@myol-creative.com](mailto:contact@myol-creative.com) to discuss opportunities."
 	}
 ]
