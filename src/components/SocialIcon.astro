@@ -1,0 +1,18 @@
+---
+interface Props {
+	url: string
+	label: string
+}
+
+const { url, label } = Astro.props
+---
+
+<a
+	href={url}
+	target='_blank'
+	rel='noopener noreferrer'
+	aria-label={label}
+	class='flex items-end justify-center w-8 h-8 text-cream-500 hover:text-yellow-500 transition-colors duration-300'
+>
+	<slot />
+</a>

@@ -1,0 +1,12 @@
+User-agent: *
+
+# Block indexing of common image file types
+Disallow: /*.jpg$
+Disallow: /*.jpeg$
+Disallow: /*.gif$
+Disallow: /*.png$
+Disallow: /*.webp$
+Disallow: /*.svg$
+Disallow: /*.bmp$
+Disallow: /*.tiff$
+Disallow: /*.mp4$
