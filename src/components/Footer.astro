@@ -4,6 +4,7 @@ import MyolLogo from './MyolLogo.astro'
 import NoiseWrapper from './NoiseWrapper.astro'
 import kofiBean from '../assets/gifs/Ko-fi-bean.gif'
 import sparkleMug from '../assets/gifs/Sparkle-mug.gif'
+import SocialIcon from './SocialIcon.astro'
 ---
 
 <footer>
@@ -13,25 +14,70 @@ import sparkleMug from '../assets/gifs/Sparkle-mug.gif'
 				<div
 					class='flex flex-col gap-m sm:items-start sm:flex-row sm:justify-between max-w-screen-2xl mx-auto p-s'
 				>
-					<div
-						class='flex items-center justify-center gap-2xs text-cream-500'
-					>
-						<MyolLogo
-							fillColor='black-500'
-							strokeColorHover='group-hover:stroke-yellow-500'
-							strokeColor='stroke-cream-500'
-						/>
-						<div class=''>
-							<p
-								class='text-step-0 font-bold font-robotoCondensed'
-							>
-								Mini Games
-							</p>
-							<p class='text-step--1 sm:text-step--2 font-light'>
-								Make your own luck, we did!
-							</p>
+					<div>
+						<div
+							class='flex items-center justify-center gap-2xs text-cream-500'
+						>
+							<MyolLogo
+								fillColor='black-500'
+								strokeColorHover='group-hover:stroke-yellow-500'
+								strokeColor='stroke-cream-500'
+							/>
+							<div>
+								<p
+									class='text-step-0 font-bold font-robotoCondensed'
+								>
+									Mini Games
+								</p>
+								<p
+									class='text-step--1 sm:text-step--2 font-light'
+								>
+									Make your own luck, we did!
+								</p>
+							</div>
 						</div>
+						<nav class='pt-s'>
+							<p
+								class='text-cream-500 text-step--1 sm:text-step--2 font-medium font-robotoCondensed'
+							>
+								Follow us on:
+							</p>
+							<ul class='flex gap-s py-3xs'>
+								<li>
+									<SocialIcon
+										label='Bluesky'
+										url='https://bsky.app/profile/myol-minigames.bsky.social'
+									>
+										<svg
+											xmlns='http://www.w3.org/2000/svg'
+											fill='currentColor'
+											viewBox='0 0 64 57'
+											><path
+												d='M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805ZM50.127 3.805C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z'
+											></path>
+										</svg></SocialIcon
+									>
+								</li>
+								<li>
+									<SocialIcon
+										label='YouTube'
+										url='https://www.youtube.com/@MYOLMiniGames'
+									>
+										<svg
+											viewBox='0 0 63 56'
+											fill='currentColor'
+											xmlns='http://www.w3.org/2000/svg'
+										>
+											<path
+												d='M60.1234 13.5734C59.4344 10.9812 57.4109 8.94688 54.8406 8.25781C50.1813 7 31.5 7 31.5 7C31.5 7 12.8188 7 8.15939 8.25781C5.58907 8.94688 3.56564 10.9812 2.87657 13.5734C1.6297 18.2656 1.6297 28.0437 1.6297 28.0437C1.6297 28.0437 1.6297 37.8219 2.87657 42.5141C3.56564 45.1063 5.58907 47.0531 8.15939 47.7422C12.8188 49 31.5 49 31.5 49C31.5 49 50.1813 49 54.8406 47.7422C57.4109 47.0531 59.4344 45.0953 60.1234 42.5141C61.3703 37.8219 61.3703 28.0437 61.3703 28.0437C61.3703 28.0437 61.3703 18.2656 60.1234 13.5734ZM25.3969 36.925V19.1625L41.0047 28.0437L25.3969 36.925Z'
+											></path>
+										</svg>
+									</SocialIcon>
+								</li>
+							</ul>
+						</nav>
 					</div>
+
 					<div
 						class='flex flex-col sm:flex-row gap-m md:gap-xl items-center sm:items-start'
 					>
