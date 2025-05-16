@@ -7,14 +7,14 @@
 		"thumbnail": "/games/mgs/assets/scenes/Thumbnail.png",
 		"video": "/previews/mgs-vid.mp4",
 		"tags": ["point & click", "novel"],
-		"status": "new"
+		"status": "new game"
 	},
 	{
 		"id": "eagleeyes",
 		"title": "Eagle Eyes",
 		"description": "A memory game",
 		"gameUrl": "/games/eagleeyes/index.html",
-		"thumbnail": "/games/eagleeyes/assets/og-image.png",
+		"thumbnail": "/games/eagleeyes/assets/ee-thumbnail.png",
 		"video": "/previews/ee-vid.mp4",
 		"tags": ["memory"],
 		"status": ""

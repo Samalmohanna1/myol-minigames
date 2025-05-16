@@ -23,19 +23,29 @@ const { headingLevel } = Astro.props
 					games.map(
 						(game) =>
 							game.status && (
-								<div class='mx-auto border-4 border-cream-500 hover:border-yellow-500 hover-transition overflow-hidden rounded-sm opacity-80 hover:opacity-100'>
-									<a href={`/${game.id}`}>
-										<VidPreview game={game} client:load />
+								<div class='relative'>
+									<div class='bg-yellow-500 p-2xs rounded-b-sm absolute z-20'>
+										<p class='font-robotoCondensed font-medium text-step--1 uppercase'>
+											{game.status}
+										</p>
+									</div>
+									<div class='mx-auto border-4 border-cream-500 hover:border-yellow-500 hover-transition overflow-hidden rounded-sm opacity-80 hover:opacity-100'>
+										<a href={`/${game.id}`}>
+											<VidPreview
+												game={game}
+												client:load
+											/>
 
-										<div class='px-2xs py-xs space-y-2xs text-cream-200 bg-black-500 flex flex-col h-full'>
-											<p class='text-step-1 font-bold font-robotoCondensed uppercase leading-tight'>
-												{game.title}
-											</p>
-											<p class='font-light text-cream-500/80'>
-												{game.description}
-											</p>
-										</div>
-									</a>
+											<div class='px-2xs py-xs space-y-2xs text-cream-200 bg-black-500 flex flex-col h-full'>
+												<p class='text-step-1 font-bold font-robotoCondensed uppercase leading-tight'>
+													{game.title}
+												</p>
+												<p class='font-light text-cream-500/80'>
+													{game.description}
+												</p>
+											</div>
+										</a>
+									</div>
 								</div>
 							)
 					)
