@@ -1,5 +1,15 @@
 [
 	{
+		"id": "kamalascoconuts",
+		"title": "Kamalas Coconuts",
+		"description": "In this lighthearted simulator, juggle orders from quirky politicians and keep your stand running.",
+		"gameUrl": "/games/kc/index.html",
+		"thumbnail": "/games/kc/assets/scenes/thumbnail.png",
+		"video": "/previews/kc-vid.mp4",
+		"tags": ["point & click", "simulator"],
+		"status": "new game"
+	},
+	{
 		"id": "mgs",
 		"title": "My Grandfathers Secret",
 		"description": "Help Ricky uncover family secrets in this heartfelt point-and-click game made for the GitHub Game Off 2024.",
@@ -7,12 +17,12 @@
 		"thumbnail": "/games/mgs/assets/scenes/Thumbnail.png",
 		"video": "/previews/mgs-vid.mp4",
 		"tags": ["point & click", "novel"],
-		"status": "new game"
+		"status": ""
 	},
 	{
 		"id": "eagleeyes",
 		"title": "Eagle Eyes",
-		"description": "A memory game",
+		"description": "Flip tiles to reveal hidden images and find all the matching pairs with the fewest moves possible.",
 		"gameUrl": "/games/eagleeyes/index.html",
 		"thumbnail": "/games/eagleeyes/assets/ee-thumbnail.png",
 		"video": "/previews/ee-vid.mp4",
