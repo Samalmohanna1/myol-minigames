@@ -5,7 +5,7 @@
 		"description": "The classic card game Solitaire.",
 		"gameUrl": "/games/solitaire/index.html",
 		"thumbnail": "/games/solitaire/assets/title.webp",
-		"video": "/previews/solitaire-vid.mp4",
+		"video": "/previews/solitaire-vid.webm",
 		"tags": ["card game", "puzzle"],
 		"status": "new game"
 	},
@@ -15,7 +15,7 @@
 		"description": "In this lighthearted simulator, juggle orders from quirky politicians and keep your stand running.",
 		"gameUrl": "/games/kc/index.html",
 		"thumbnail": "/games/kc/assets/scenes/thumbnail.webp",
-		"video": "/previews/kc-vid.mp4",
+		"video": "/previews/kc-vid.webm",
 		"tags": ["point & click", "simulator"],
 		"status": "new game"
 	},
@@ -25,7 +25,7 @@
 		"description": "Help Ricky uncover family secrets in this heartfelt point-and-click game made for the GitHub Game Off 2024.",
 		"gameUrl": "/games/mgs/index.html",
 		"thumbnail": "/games/mgs/assets/scenes/Thumbnail.png",
-		"video": "/previews/mgs-vid.mp4",
+		"video": "/previews/mgs-vid.webm",
 		"tags": ["point & click", "novel"],
 		"status": ""
 	},
@@ -35,7 +35,7 @@
 		"description": "Flip tiles to reveal hidden images and find all the matching pairs with the fewest moves possible.",
 		"gameUrl": "/games/eagleeyes/index.html",
 		"thumbnail": "/games/eagleeyes/assets/ee-thumbnail.png",
-		"video": "/previews/ee-vid.mp4",
+		"video": "/previews/ee-vid.webm",
 		"tags": ["memory"],
 		"status": ""
 	},
@@ -45,7 +45,7 @@
 		"description": "A short and fun point-and-click game that packs a punch.",
 		"gameUrl": "/games/ratsreckoning/index.html",
 		"thumbnail": "/games/ratsreckoning/thumbnail.png",
-		"video": "/previews/rr-vid.mp4",
+		"video": "/previews/rr-vid.webm",
 		"tags": ["arcade", "point & click"],
 		"status": ""
 	},
@@ -55,7 +55,7 @@
 		"description": "Welcome to Hell. The only way out is to earn your way out, so start collecting.",
 		"gameUrl": "/games/booh/index.html",
 		"thumbnail": "/games/booh/Frame 1.png",
-		"video": "/previews/boh-vid.mp4",
+		"video": "/previews/boh-vid.webm",
 		"tags": ["arcade"],
 		"status": ""
 	},
@@ -65,7 +65,7 @@
 		"description": "You have two minutes to eat as many fish as possible, eating the wrong fish will end the game.",
 		"gameUrl": "/games/fishyfishy/index.html",
 		"thumbnail": "/games/fishyfishy/Thumbnail.png",
-		"video": "/previews/ff-vid.mp4",
+		"video": "/previews/ff-vid.webm",
 		"tags": ["arcade"],
 		"status": ""
 	}
