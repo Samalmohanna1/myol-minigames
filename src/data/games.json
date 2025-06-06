@@ -1,10 +1,20 @@
 [
 	{
+		"id": "solitaire",
+		"title": "Solitaire",
+		"description": "The classic card game Solitaire.",
+		"gameUrl": "/games/solitaire/index.html",
+		"thumbnail": "/games/solitaire/assets/title.webp",
+		"video": "/previews/solitaire-vid.mp4",
+		"tags": ["card game", "puzzle"],
+		"status": "new game"
+	},
+	{
 		"id": "kamalascoconuts",
 		"title": "Kamalas Coconuts",
 		"description": "In this lighthearted simulator, juggle orders from quirky politicians and keep your stand running.",
 		"gameUrl": "/games/kc/index.html",
-		"thumbnail": "/games/kc/assets/scenes/thumbnail.png",
+		"thumbnail": "/games/kc/assets/scenes/thumbnail.webp",
 		"video": "/previews/kc-vid.mp4",
 		"tags": ["point & click", "simulator"],
 		"status": "new game"
@@ -57,6 +67,6 @@
 		"thumbnail": "/games/fishyfishy/Thumbnail.png",
 		"video": "/previews/ff-vid.mp4",
 		"tags": ["arcade"],
-		"status": "popular"
+		"status": ""
 	}
 ]
