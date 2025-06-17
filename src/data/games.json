@@ -1,5 +1,15 @@
 [
 	{
+		"id": "c4",
+		"title": "Connect Four",
+		"description": "Classic Connect Four, the vertical checkers game.",
+		"gameUrl": "/games/c4/index.html",
+		"thumbnail": "/games/c4/assets/thumbnail.webp",
+		"video": "/previews/c4-vid.webm",
+		"tags": ["multiplayer", "strategy", "board game"],
+		"status": "new game"
+	},
+	{
 		"id": "solitaire",
 		"title": "Solitaire",
 		"description": "The classic card game Solitaire.",
@@ -7,7 +17,7 @@
 		"thumbnail": "/games/solitaire/assets/title.webp",
 		"video": "/previews/solitaire-vid.webm",
 		"tags": ["card game", "puzzle"],
-		"status": "new game"
+		"status": ""
 	},
 	{
 		"id": "kamalascoconuts",
