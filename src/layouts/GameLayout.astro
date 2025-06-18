@@ -23,8 +23,8 @@ const { title, description, image } = Astro.props
 		/>
 		<ClientRouter />
 	</head>
-	<body class='h-screen flex flex-col bg-black-500'>
-		<main>
+	<body class='flex flex-col justify-between bg-black-500'>
+		<main class='px-s lg:px-l'>
 			<slot />
 		</main>
 		<Footer />
