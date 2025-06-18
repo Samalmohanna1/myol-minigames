@@ -13,14 +13,13 @@ const { game } = Astro.props
 ---
 
 <GameLayout title={game.title}>
-	<div class='h-dvh border-4 border-black-500'>
+	<div class='aspect-video max-h-dvh mx-auto'>
 		<iframe
 			src={game.gameUrl}
 			id='game-iframe'
-			width='800'
-			height='450'
 			class='w-full h-full'
-			allowfullscreen='true'></iframe>
+			allowfullscreen='true'
+			style='aspect-ratio:16/9;'></iframe>
 	</div>
 
 	<div class='py-l text-center'>
